@@ -11,10 +11,14 @@
             "id": "92a1e7d710c131d6",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "4. Archive/Daily/_claude/projects/Empty-PWA.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "New tab"
+              "title": "Empty-PWA"
             }
           }
         ]
@@ -166,8 +170,8 @@
             "state": {
               "type": "calendar",
               "state": {},
-              "icon": "calendar-with-checkmark",
-              "title": "Calendar"
+              "icon": "lucide-ghost",
+              "title": "calendar"
             }
           }
         ],
@@ -187,15 +191,31 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "92a1e7d710c131d6",
   "lastOpenFiles": [
-    "Templates",
+    "4. Archive/Daily/_claude/active.md",
+    "4. Archive/Daily/_claude/projects/Empty-PWA.md",
+    "_claude/projects",
+    "_claude",
+    "4. Archive/Daily/_claude/log.md",
+    "4. Archive/Daily/_claude/memory.md",
+    "Untitled.md",
+    "4. Archive/Daily/_claude/projects",
+    "2. Areas.md",
+    "4. Archive/Daily/_claude",
+    "Untitled",
+    "4. Archive/Daily",
+    "4. Archive",
+    "3. Resources",
+    "2. Areas",
+    "3. Resources.md",
     "Welcome.md",
+    "1. PROJECTS",
     "test/test.md",
-    "test",
     "2026-04-12.md",
     "create a link.md"
   ]
