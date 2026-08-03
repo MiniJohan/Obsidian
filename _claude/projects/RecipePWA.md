@@ -38,9 +38,9 @@ All decisions below are open and need to be made before code begins.
 
 ## Open Foundation Decisions
 
-- [ ] Name + branding
-- [ ] Product positioning (tagline, identity)
-- [ ] Information architecture (screens, navigation model)
+- [x] Name + branding → **Mise**
+- [x] Product positioning (tagline, identity) → *A quieter way to think about food*
+- [x] Information architecture (screens, navigation model) → no tab bar V1, Library + Detail + Create/Edit sheet + inline search, 2-col grid cards
 - [ ] Frontend framework choice
 - [ ] Backend + hosting strategy
 - [ ] Database (local-first vs cloud-first)
@@ -121,3 +121,9 @@ Optional lightweight food awareness.
 Transferred project brief into Obsidian. App is in pre-planning phase.
 No code has been written. Foundation decisions are the immediate next step.
 Brief saved to [[RecipePWA-brief]].
+
+### 2026-08-03 — Name + positioning decided
+- **Name:** Mise (from "mise en place" — everything in its place)
+- **Tagline:** *A quieter way to think about food*
+- **Positioning:** Calm personal recipe companion. Anti-diet, anti-clutter.
+- Rejected: Larder (strong but niche), Plum (too light on meaning)

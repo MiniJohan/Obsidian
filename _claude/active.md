@@ -7,16 +7,9 @@ Starting from scratch. Foundation phase only. No code yet.
 
 ## In progress
 - Establishing project foundation before any code is written
-- Open decisions: name/branding, tech stack, architecture, DB, auth, offline strategy
+- ✅ Name: **Mise** | Tagline: *A quieter way to think about food*
+- Open decisions: tech stack, DB, auth, offline strategy
+- ✅ IA: no tab bar V1, Library → Detail, Create/Edit as modal sheet, inline search, 2-col grid
 
-## Blocked on
-- All foundation decisions need to be made first (see RecipePWA.md)
-
-## Next session
-- Work through foundation decisions one by one:
-  1. Naming + positioning
-  2. Information architecture
-  3. Tech stack (frontend framework, backend, hosting)
-  4. Database + offline strategy
-  5. Auth approach
-  6. Project structure
+## Next up
+- Tech stack (frontend framework, backend, hosting)

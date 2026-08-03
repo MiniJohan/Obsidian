@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_claude/projects/RecipePWA-brief.md",
+                "file": "_claude/projects/RecipePWA.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "RecipePWA-brief"
+              "title": "RecipePWA"
             }
           }
         ]
@@ -197,8 +197,8 @@
   },
   "active": "92a1e7d710c131d6",
   "lastOpenFiles": [
-    "_claude/memory.md",
     "_claude/projects/RecipePWA-brief.md",
+    "_claude/memory.md",
     "_claude/projects/RecipePWA.md",
     "_claude/projects/Empty-PWA.md",
     "_claude/log.md",
