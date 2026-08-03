@@ -44,11 +44,11 @@ All decisions below are open and need to be made before code begins.
 - [x] Frontend framework choice → **React + Vite**
 - [x] Backend + hosting strategy → **Supabase** (DB + auth + image storage) + **Vercel** hosting
 - [x] Database (local-first vs cloud-first) → **Supabase Postgres**, cloud-first + service worker read cache for offline
-- [ ] Authentication strategy
-- [ ] Offline / PWA strategy
-- [ ] Image storage approach
-- [ ] Project structure + folder conventions
-- [ ] Deployment pipeline
+- [x] Authentication strategy → **Magic link** (Supabase Auth), persistent JWT session, RLS + user_id on all tables from day one
+- [x] Offline / PWA strategy → **Service worker read cache** via vite-plugin-pwa + Workbox
+- [x] Image storage approach → **Supabase Storage**
+- [x] Project structure + folder conventions → src/pages, src/components, src/hooks, src/lib, src/styles
+- [x] Deployment pipeline → **Vercel** from GitHub
 
 ---
 
