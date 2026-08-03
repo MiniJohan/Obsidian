@@ -9,6 +9,8 @@ last-updated: 2026-08-03
 > Effortless recipe collection and "what should I eat?" decision support.
 > PWA-first. Personal use now, multi-user ready later.
 
+> Full brief: [[RecipePWA-brief]]
+
 ---
 
 ## Vision
@@ -118,4 +120,4 @@ Optional lightweight food awareness.
 ### 2026-08-03 — Project created
 Transferred project brief into Obsidian. App is in pre-planning phase.
 No code has been written. Foundation decisions are the immediate next step.
-Full brief lives in Claude conversation context.
+Brief saved to [[RecipePWA-brief]].
