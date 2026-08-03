@@ -1,6 +1,6 @@
 ---
 status: active
-last-updated: 2026-08-02
+last-updated: 2026-08-03
 ---
 
 # Empty PWA
@@ -18,6 +18,16 @@ last-updated: 2026-08-02
 | Hosting | GitHub Pages |
 | Auth | Magic-link (passwordless email via Supabase) |
 | AI (planned) | Ollama via Cloudflare Tunnel |
+
+---
+
+## GitHub Repo
+- **URL:** *(add GitHub repo URL)*
+- **Local path:** *(add local clone path, e.g. D:\Empty-PWA\)*
+- **Branch:** main *(confirm)*
+
+> Always give Claude the repo URL or local path before debugging sessions.
+> Raw file access: `https://raw.githubusercontent.com/USER/REPO/main/path/to/file`
 
 ---
 
@@ -94,7 +104,53 @@ Let the local AI rewrite or clean up a captured thought in place.
 ---
 
 ## Known Issues
--
+
+### ⚠️ Context note — 2026-08-03
+The debugging chat ("Empty PWA fix") was deleted. Specific issues discussed there are lost.
+Assessment below is based on the stack + general knowledge, not that conversation.
+
+---
+
+### 🔴 High Confidence — Magic-link + iOS PWA auth flow
+**Most likely root cause of any auth issue.**
+
+The problem: tapping a magic link in iOS Mail opens **Safari**, not the installed PWA.
+Auth completes in Safari. The standalone PWA has a separate storage context.
+Result: user completes auth in Safari, returns to PWA, still appears logged out.
+
+**This is a known iOS limitation — it requires an explicit workaround:**
+- After Supabase handles the magic link, redirect to a URL that deep-links back into the PWA
+- Or show a "Return to app" prompt in Safari after auth completes
+- Or use a session-bridging approach (write token to a shared location, pick it up in the PWA)
+
+---
+
+### 🔴 High Confidence — Supabase RLS silent empty results
+If Row Level Security is enabled on `thoughts` and the policy doesn't match the user's JWT,
+queries return `[]` with no error — looks like missing data, is actually an auth/policy mismatch.
+
+**Check:** Supabase dashboard → Table Editor → thoughts → RLS policies.
+Make sure there's a SELECT policy like: `auth.uid() = user_id`
+
+---
+
+### 🟡 Medium Confidence — Auth callback URL mismatch
+The redirect URL set in Supabase Auth settings must exactly match the GitHub Pages URL.
+One character off (trailing slash, http vs https) = broken magic link flow.
+
+---
+
+### 🟡 Medium Confidence — Session not hydrating on PWA cold start
+Supabase client must check for an existing session on load.
+If the app renders before `supabase.auth.getSession()` resolves, it shows a logged-out state
+even when a valid session token exists in localStorage.
+
+---
+
+### 🟢 Probably Fine
+- PWA manifest and install flow (app is live)
+- Supabase connection itself (basic thought capture confirmed working)
+- Core write/read cycle
 
 ---
 
@@ -105,3 +161,7 @@ Set up Obsidian vault (Void) as a second brain with Claude Desktop MCP integrati
 This file is Claude's persistent context for the Empty PWA project.
 Vault path: `D:\Obsidian\Vaults\void`
 MCP server: `@modelcontextprotocol/server-filesystem`
+
+### 2026-08-03 — Issues assessment (no repo access)
+Debugging chat deleted. Assessed likely issues from stack knowledge.
+Added GitHub repo section — fill in URL and local path before next session.
