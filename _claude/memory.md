@@ -11,6 +11,8 @@
   Kokoro ONNX TTS, faster-whisper STT. Location: D:\VALE\
 - [[Empty PWA]] — iPhone-first thought capture + checklist. Supabase backend,
   magic-link auth. Next: timestamps, multi-list support, Ollama AI rewrite.
+- [[RecipePWA]] — Calm personal food companion PWA. Recipe library + "what should I eat?"
+  In pre-planning phase. No tech decisions made yet. Light theme, grayscale, Inter.
 
 ## Tech Stack
 | Layer | Tools |
@@ -24,3 +26,5 @@
 - Explain reasoning, not just solutions.
 - Prioritize understanding over copy-paste code.
 - Design feedback: dark minimal wins. Reject anything cluttered.
+
+---

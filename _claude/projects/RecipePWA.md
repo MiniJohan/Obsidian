@@ -1,0 +1,121 @@
+---
+status: planning
+last-updated: 2026-08-03
+---
+
+# Recipe PWA
+
+> A calm personal food companion.
+> Effortless recipe collection and "what should I eat?" decision support.
+> PWA-first. Personal use now, multi-user ready later.
+
+---
+
+## Vision
+
+Not a calorie tracker. Not a diet app. Not a social network.
+
+Two questions the app must answer beautifully:
+1. **What should I eat?**
+2. **Where did I save that recipe?**
+
+Design inspiration: Apple apps, Linear, Notion, Things, Bear, Arc Browser.
+Feel: minimal, modern, premium, calm, fast, intentional.
+Theme: light only. Grayscale palette. Inter. Generous whitespace.
+
+---
+
+## Status
+
+**Phase:** Foundation / Pre-build
+
+Nothing has been decided on tech, naming, or architecture yet.
+All decisions below are open and need to be made before code begins.
+
+---
+
+## Open Foundation Decisions
+
+- [ ] Name + branding
+- [ ] Product positioning (tagline, identity)
+- [ ] Information architecture (screens, navigation model)
+- [ ] Frontend framework choice
+- [ ] Backend + hosting strategy
+- [ ] Database (local-first vs cloud-first)
+- [ ] Authentication strategy
+- [ ] Offline / PWA strategy
+- [ ] Image storage approach
+- [ ] Project structure + folder conventions
+- [ ] Deployment pipeline
+
+---
+
+## Version 1 Scope (MVP)
+
+Core recipe library only. No tracking. No social. No AI (yet).
+
+| Feature | Status |
+|---|---|
+| Recipe library view | Not started |
+| Recipe cards | Not started |
+| Recipe detail page | Not started |
+| Recipe search | Not started |
+| Favorites | Not started |
+| Create recipe | Not started |
+| Edit recipe | Not started |
+| Image support | Not started |
+| Tags | Not started |
+| Basic categories | Not started |
+
+---
+
+## Version 2 (Planned — Not Soon)
+
+Optional lightweight food awareness.
+- Log what you ate today
+- Gentle observations only ("add some vegetables", "try more variety")
+- No calories, no macros, no scores, no streaks, no guilt
+
+---
+
+## Future Possibilities (Ideas Only)
+
+- Recipe URL / AI importing
+- Shopping lists
+- Meal planning
+- Recipe sharing
+- AI recommendations
+- Voice input
+- Home screen widgets
+- Cloud sync
+
+---
+
+## Design Language
+
+- Light theme only
+- Grayscale color palette
+- Inter typography
+- Generous whitespace
+- Rounded corners
+- Minimal animations
+- Subtle depth
+- No gradients, no decoration
+
+---
+
+## Architecture Principles
+
+- Simple. No enterprise patterns.
+- Personal first, multi-user ready structurally.
+- No big rewrite needed when scaling.
+- Refactor when needed, not before.
+
+---
+
+## Decision Log
+
+### 2026-08-03 — Project created
+Transferred project brief into Obsidian. App is in pre-planning phase.
+No code has been written. Foundation decisions are the immediate next step.
+Full brief lives in Claude conversation context.
