@@ -41,9 +41,9 @@ All decisions below are open and need to be made before code begins.
 - [x] Name + branding → **Mise**
 - [x] Product positioning (tagline, identity) → *A quieter way to think about food*
 - [x] Information architecture (screens, navigation model) → no tab bar V1, Library + Detail + Create/Edit sheet + inline search, 2-col grid cards
-- [ ] Frontend framework choice
-- [ ] Backend + hosting strategy
-- [ ] Database (local-first vs cloud-first)
+- [x] Frontend framework choice → **React + Vite**
+- [x] Backend + hosting strategy → **Supabase** (DB + auth + image storage) + **Vercel** hosting
+- [x] Database (local-first vs cloud-first) → **Supabase Postgres**, cloud-first + service worker read cache for offline
 - [ ] Authentication strategy
 - [ ] Offline / PWA strategy
 - [ ] Image storage approach
