@@ -7,36 +7,49 @@
 - Aesthetic: Dark, minimal, no clutter
 
 ## Active Projects
-- [[VALE]] — Local AI home assistant. FastAPI (port 5500), Ollama qwen2.5:14b,
-  Kokoro ONNX TTS, faster-whisper STT. Location: D:\VALE\
-- [[Empty PWA]] — iPhone-first thought capture + checklist. Supabase backend,
-  magic-link auth. Next: timestamps, multi-list support, Ollama AI rewrite.
-- [[RecipePWA]] — Calm personal food companion PWA. Recipe library + "what should I eat?"
-  In pre-planning phase. No tech decisions made yet. Light theme, grayscale, Inter.
+
+| Project | Status | Stack | Location |
+|---|---|---|---|
+| [[VALE]] | Active | FastAPI, Ollama, Kokoro TTS, Whisper | D:\VALE\ |
+| [[Empty PWA]] | V1 complete — parked | Vanilla JS, Supabase, GitHub Pages | https://github.com/MiniJohan/Empty |
+| [[Mise]] | Active build | React + Vite, Supabase, Vercel | RecipePWA in Obsidian |
 
 ## Tech Stack
 | Layer | Tools |
 |---|---|
-| Frontend | HTML, CSS, vanilla JS |
-| Backend | Python, FastAPI |
-| AI local | Ollama, Cloudflare Tunnel, Whisper, Kokoro ONNX |
+| Frontend | HTML/CSS/JS (vanilla), React + Vite |
+| Backend | Python, FastAPI, Supabase |
+| AI local | Ollama (qwen2.5:14b), Cloudflare Tunnel, Whisper, Kokoro ONNX |
+| Hosting | GitHub Pages (Empty), Vercel (Mise) |
 
 ---
 
 ## GitHub Access
-Before doing any deep debugging, code review, or architecture work on a project — always check if the repo is accessible. Never guess at code structure when files can be read directly.
+Before any debugging, code review, or architecture work — always check if the repo is accessible. Never guess at code structure when files can be read directly.
 
-### How to access
-| Method | When to use | How |
+| Method | When | How |
 |---|---|---|
-| **Public repo URL** | Repo is public on GitHub | `web_fetch` raw files via `https://raw.githubusercontent.com/USER/REPO/BRANCH/path/file` |
-| **Local clone via brain MCP** | Repo is cloned on Zon's machine | Ask for the local path, read files via brain filesystem tools |
-| **Paste** | Private, not cloned | Ask Zon to paste the relevant files |
+| **Public repo URL** | Repo is public | Fetch blob page: `https://github.com/USER/REPO/blob/main/FILE` |
+| **Local clone** | Repo cloned on Zon's machine | Ask for local path, read via brain MCP |
+| **Paste** | Private, not cloned | Ask Zon to paste relevant files |
 
-### Rules
-- No GitHub MCP connector exists in the directory — do not suggest it as an option.
-- Always ask: *"Can you share the GitHub URL or local repo path?"* before diagnosing any code issue.
-- If the repo path isn't in the project file, ask for it and save it once provided.
+**Rules:**
+- No GitHub MCP in the connector directory — don't suggest it
+- Always ask for repo URL or local path before diagnosing any code issue
+- `style.css` for Empty PWA can't be fetched via blob — ask user to paste it
+
+---
+
+## Key Decisions — Empty PWA
+
+**Auth: email + password** (not magic link)
+iOS standalone PWA and Safari have permanently isolated localStorage.
+Magic links open in Safari. Session never reaches the PWA. Not fixable in code.
+Email + password keeps everything inside the PWA's own storage context.
+
+**Mic language: `navigator.language` default**
+Was hardcoded `sv-SE`. Caused silent failures for non-Swedish users.
+Now reads device language, overridable in settings.
 
 ---
 

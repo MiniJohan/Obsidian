@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_claude/projects/Empty-PWA.md",
+                "file": "_claude/log.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Empty-PWA"
+              "title": "log"
             }
           }
         ]
@@ -197,12 +197,12 @@
   },
   "active": "92a1e7d710c131d6",
   "lastOpenFiles": [
-    "2026-08-04.md",
     "_claude/projects/Empty-PWA.md",
-    "_claude/memory.md",
-    "VALE.md",
     "_claude/log.md",
+    "_claude/memory.md",
     "_claude/active.md",
+    "2026-08-04.md",
+    "VALE.md",
     "_claude/projects/RecipePWA-brief.md",
     "_claude/projects/RecipePWA.md",
     "_templates/project.md",
