@@ -10,86 +10,82 @@ last-updated: 2026-08-04
 
 ---
 
+## GitHub Repo
+- **URL:** https://github.com/MiniJohan/Empty
+- **Live:** https://minijohan.github.io/Empty/
+- **Branch:** main
+- **Fetch files:** `https://github.com/MiniJohan/Empty/blob/main/FILENAME`
+
+> Claude: fetch blob page for each file needed. Cannot access style.css via prior URLs — ask user to paste it.
+
+---
+
 ## Stack
 | Layer | Tools |
 |---|---|
 | Frontend | Vanilla HTML / CSS / JS, PWA manifest |
 | Backend | Supabase (Postgres + Auth) |
 | Hosting | GitHub Pages |
-| Auth | Email + password (signInWithPassword / signUp) |
+| Auth | Email + password (`signInWithPassword` / `signUp`) |
 | AI (planned) | Ollama via Cloudflare Tunnel |
-
----
-
-## GitHub Repo
-- **URL:** https://github.com/MiniJohan/Empty
-- **Live:** https://minijohan.github.io/Empty/
-- **Branch:** main
-- **Raw file access:** `https://github.com/MiniJohan/Empty/blob/main/FILENAME`
-
-> Claude: fetch blob pages to read file content. Raw URLs via `raw/refs/heads/main/` pattern.
-> Do NOT guess at code — fetch the file first.
 
 ---
 
 ## Files
 | File | Purpose |
 |---|---|
-| `index.html` | Shell, PWA meta, login + app screens |
-| `app.js` | All logic — auth, render, CRUD, voice, search |
-| `style.css` | All styles |
+| `index.html` | Shell, PWA meta, login + app + settings screens |
+| `app.js` | All logic — auth, settings, render, CRUD, voice, search |
+| `style.css` | All styles (Claude cannot access directly — ask user to paste) |
 | `manifest.json` | PWA manifest |
-| `service_worker.js` | SW (was broken — `sw.js` path fixed to `service_worker.js`) |
+| `service_worker.js` | Offline caching |
 
 ---
 
-## Auth — Current Implementation
+## Auth
+**Method:** Email + password
 
-**Method:** Email + password via Supabase `signInWithPassword` / `signUp`
-
-**Why not magic link:** iOS standalone PWA and Safari have completely isolated
-localStorage. Magic links always open in Safari. Session created in Safari never
-reaches the PWA's storage context. This is permanent iOS behavior.
+**Why not magic link:** iOS standalone PWA and Safari have completely isolated localStorage.
+Magic links always open Safari. Session never reaches the PWA. Permanent iOS behavior.
 
 **Flow:**
-1. User enters email + password → hits continue
+1. Email + password → continue
 2. App tries `signInWithPassword` first
-3. If "Invalid login credentials" → tries `signUp` to create account, then signs in
-4. `onAuthStateChange` fires → `showApp()` called
-5. `getSession()` on startup covers returning users — reads from PWA's own localStorage
+3. If "Invalid login credentials" → `signUp` to create, then sign in
+4. `onAuthStateChange` → `showApp()`
+5. `getSession()` on startup covers returning users
 
-**Supabase settings required:**
-- Authentication → Providers → Email → **"Confirm email" must be OFF**
-- No redirect URLs needed
+**Supabase settings:**
+- Authentication → Providers → Email → **Confirm email: OFF**
 
 ---
 
-## What's Been Built
+## Features (V1 complete)
 
-- PWA scaffolded and live on GitHub Pages
-- Supabase connected, RLS with `user_id` on `thoughts` table
-- Email + password auth (working)
-- Session persistence — opens straight to app on return
-- Thought capture: write, persist to Supabase
-- Toggle done / urgent
-- Swipe left to delete
-- Inline edit on tap
-- Voice input (Swedish, auto-dump on 4s silence)
-- Search mode (type `/` to filter)
+- [x] Email + password auth, persistent session
+- [x] Thought capture with multi-item split (comma / semicolon / newline)
+- [x] Toggle done / urgent
+- [x] Swipe left to delete (with collapse animation)
+- [x] Inline edit on tap
+- [x] Voice input — language auto-detects from device, configurable in settings
+- [x] Search mode (type `/` to filter)
+- [x] Settings sheet:
+  - Voice language selector (auto / Swedish / English / etc.)
+  - Clear completed thoughts
+  - Sign out
+- [x] Service worker registered correctly (`service_worker.js`)
+- [x] RLS with `user_id` on all queries
 
 ---
 
 ## What's Needed Next
 
 ### 1. Timestamps
-- [ ] Confirm `created_at` column exists on `thoughts` (Supabase default)
-- [ ] Add `updated_at` with auto-update trigger if missing
-- [ ] Display relative timestamps in UI ("2 hours ago")
+- [ ] Confirm `created_at` column on `thoughts` (Supabase default)
+- [ ] Add `updated_at` with auto-update trigger
+- [ ] Display relative timestamps ("2 hours ago")
 
 ### 2. Multiple Lists
-Biggest structural change.
-
-**Schema:**
 ```sql
 create table lists (
   id uuid default gen_random_uuid() primary key,
@@ -97,48 +93,40 @@ create table lists (
   name text not null,
   created_at timestamptz default now()
 );
-
 alter table thoughts add column list_id uuid references lists(id);
 ```
-
-- [ ] Create `lists` table
-- [ ] Add `list_id` FK to `thoughts`
-- [ ] Migrate existing thoughts to a default list
-- [ ] UI: list switcher, create/rename/delete list
-- [ ] Filter thoughts query by active `list_id`
+- [ ] Create table, add FK, migrate existing thoughts
+- [ ] UI: list switcher, create/rename/delete
 
 ### 3. AI Rewrite via Ollama
-- [ ] Cloudflare Tunnel pointing to local Ollama (port 11434)
-- [ ] Secure tunnel endpoint
-- [ ] "Rewrite" button per thought
-- [ ] POST to tunnel → stream response
-- [ ] Update thought in Supabase
+- [ ] Cloudflare Tunnel → local Ollama (port 11434)
+- [ ] Secure endpoint
+- [ ] Rewrite button per thought
 
 ---
 
-## Known Issues (resolved)
+## Known Issues (all resolved)
 
-| Issue | Status | Fix |
-|---|---|---|
-| Magic link opens Safari on iOS, session never reaches PWA | ✅ Fixed | Switched to email + password auth |
-| PKCE code verifier not accessible cross-context on iOS | ✅ Fixed | Removed PKCE, switched auth method entirely |
-| Service worker registered as `./sw.js` (file doesn't exist) | ✅ Fixed | Changed to `./service_worker.js` |
-| `passwordInput` not declared as variable | ✅ Fixed | Added `const passwordInput = document.getElementById('password-input')` |
-| `#password-input` missing from `index.html` | ✅ Fixed | Added input to login-box |
+| Issue | Fix |
+|---|---|
+| Magic link opens Safari, session never reaches iOS PWA | Switched to email + password auth |
+| PKCE cross-context failure on iOS | Removed PKCE, switched auth method |
+| Service worker registered as `./sw.js` | Fixed to `./service_worker.js` |
+| `passwordInput` not declared as variable | Added to element declarations |
+| `#password-input` missing from `index.html` | Added to login-box |
+| Mic language hardcoded `sv-SE` — fails for non-Swedish users | `getVoiceLang()` reads device language, overridable in settings |
 
 ---
 
 ## Decision Log
 
-### 2026-08-02 — Second Brain setup
-Set up Obsidian vault (Void) as second brain with Claude Desktop MCP integration.
+### 2026-08-02
+Obsidian vault + Claude MCP integration set up.
 
-### 2026-08-03 — Auth method changed: magic link → email/password
-Magic link auth is fundamentally broken on iOS PWA due to storage partitioning
-between Safari and standalone PWA contexts. This is not fixable in code.
-Switched to email/password. No Supabase SMTP setup required. No custom domain needed.
-Supabase "Confirm email" toggle must be OFF for auto-signup flow to work.
+### 2026-08-03
+Auth changed from magic link to email/password. iOS localStorage isolation is permanent.
 
-### 2026-08-04 — Bug fixes
-Fixed missing `passwordInput` variable declaration and missing `#password-input`
-element in `index.html`. Both were omitted in previous fix delivery.
+### 2026-08-04
+Settings sheet added: voice language, clear completed, sign out.
+Mic language now uses `navigator.language` as default — fixes cross-device failures.
+V1 feature set complete. Moving to Mise (RecipePWA) next.
