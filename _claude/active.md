@@ -12,15 +12,7 @@ Foundation is complete. Project scaffolded. Now building features.
 - ✅ memory.md updated
 
 ## Mise — current build state
-- ✅ Foundation decisions finalized
-- ✅ Project scaffolded (React + Vite, Supabase, Vercel)
-- ✅ Auth flow built (useAuth hook, magic link, protected routing)
-- ✅ useRecipes data hook delivered
-- ✅ RecipeCard component + CSS delivered
-- 🔄 **Next: Library screen** — grid layout + Library page component
-
-## After Library screen
-- Recipe Detail screen
-- Create/Edit modal sheet
-- Offline caching (Workbox)
-- Full V1 feature closure
+- ✅ All core features complete
+- ✅ Auth, Library, RecipeDetail, Create/Edit modal, useRecipes hook
+- 🔄 **Next: Offline caching (Workbox config)**
+- Then: Vercel deployment + PWA install on iPhone

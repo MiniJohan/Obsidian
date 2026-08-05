@@ -58,16 +58,18 @@ Core recipe library only. No tracking. No social. No AI (yet).
 
 | Feature | Status |
 |---|---|
-| Recipe library view | Not started |
-| Recipe cards | Not started |
-| Recipe detail page | Not started |
-| Recipe search | Not started |
-| Favorites | Not started |
-| Create recipe | Not started |
-| Edit recipe | Not started |
-| Image support | Not started |
-| Tags | Not started |
-| Basic categories | Not started |
+| Recipe library view | ✅ Done |
+| Recipe cards | ✅ Done |
+| Recipe detail page | ✅ Done |
+| Recipe search | ✅ Done |
+| Favorites | ✅ Done |
+| Create recipe | ✅ Done |
+| Edit recipe | ✅ Done |
+| Image support | ✅ Done |
+| Tags | ✅ Done |
+| Basic categories | ✅ Done |
+| Offline caching | 🔄 In progress |
+| Vercel deployment + PWA install | Not started |
 
 ---
 
