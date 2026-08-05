@@ -1,6 +1,6 @@
 ---
-status: planning
-last-updated: 2026-08-03
+status: active
+last-updated: 2026-08-05
 ---
 
 # Recipe PWA
@@ -68,8 +68,9 @@ Core recipe library only. No tracking. No social. No AI (yet).
 | Image support | ✅ Done |
 | Tags | ✅ Done |
 | Basic categories | ✅ Done |
-| Offline caching | 🔄 In progress |
-| Vercel deployment + PWA install | Not started |
+| Offline caching | ✅ Done |
+| Vercel deployment + PWA install | ✅ Done |
+| V1 code review + fixes | ✅ Done |
 
 ---
 
@@ -124,8 +125,13 @@ Transferred project brief into Obsidian. App is in pre-planning phase.
 No code has been written. Foundation decisions are the immediate next step.
 Brief saved to [[RecipePWA-brief]].
 
-### 2026-08-03 — Name + positioning decided
-- **Name:** Mise (from "mise en place" — everything in its place)
-- **Tagline:** *A quieter way to think about food*
-- **Positioning:** Calm personal recipe companion. Anti-diet, anti-clutter.
-- Rejected: Larder (strong but niche), Plum (too light on meaning)
+### 2026-08-05 — V1 complete + code review
+- Auth switched from magic link to email/password
+- Deployed to Vercel, installed as PWA on iPhone
+- Code review surfaced and fixed 5 issues:
+  - iOS scroll lock in Modal (position:fixed technique)
+  - Orphaned images in Storage on recipe edit (now deleted before upload)
+  - Blob URL memory leak in RecipeForm (URL.revokeObjectURL added)
+  - Blank white screen on app load (replaced with Mise wordmark)
+  - No sign out button (added to Library header, subtle)
+- Minor known gaps (acceptable for V1): window.confirm on delete, div-as-button on RecipeCard, no getSession() error handling

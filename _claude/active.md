@@ -12,7 +12,10 @@ Foundation is complete. Project scaffolded. Now building features.
 - ✅ memory.md updated
 
 ## Mise — current build state
-- ✅ All core features complete
-- ✅ Auth, Library, RecipeDetail, Create/Edit modal, useRecipes hook
-- 🔄 **Next: Offline caching (Workbox config)**
-- Then: Vercel deployment + PWA install on iPhone
+- ✅ V1 complete — all features built, deployed, reviewed and patched
+- App is live on Vercel and installed on iPhone
+- No open bugs. Minor V1 gaps documented in Mise.md decision log.
+
+## Next up
+- V1 is closed. Nothing open.
+- When ready: V2 planning (food logging, "what should I eat?")
