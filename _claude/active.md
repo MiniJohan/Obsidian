@@ -19,3 +19,12 @@ Foundation is complete. Project scaffolded. Now building features.
 ## Next up
 - V1 is closed. Nothing open.
 - When ready: V2 planning (food logging, "what should I eat?")
+
+---
+
+## VaultPWA — Password Manager (Planning)
+Started planning 2026-08-06.
+Project file: [[VaultPWA]]
+
+- Architecture decided (zero-knowledge, Argon2id, AES-256-GCM, Supabase)
+- Awaiting name + green light to build
