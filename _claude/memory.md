@@ -27,11 +27,11 @@
 ## GitHub Access
 Before any debugging, code review, or architecture work — always check if the repo is accessible. Never guess at code structure when files can be read directly.
 
-| Method | When | How |
-|---|---|---|
-| **Public repo URL** | Repo is public | Fetch blob page: `https://github.com/USER/REPO/blob/main/FILE` |
-| **Local clone** | Repo cloned on Zon's machine | Ask for local path, read via brain MCP |
-| **Paste** | Private, not cloned | Ask Zon to paste relevant files |
+| Method              | When                         | How                                                            |
+| ------------------- | ---------------------------- | -------------------------------------------------------------- |
+| **Public repo URL** | Repo is public               | Fetch blob page: `https://github.com/USER/REPO/blob/main/FILE` |
+| **Local clone**     | Repo cloned on Zon's machine | Ask for local path, read via brain MCP                         |
+| **Paste**           | Private, not cloned          | Ask Zon to paste relevant files                                |
 
 **Rules:**
 - No GitHub MCP in the connector directory — don't suggest it
