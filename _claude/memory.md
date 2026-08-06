@@ -13,6 +13,7 @@
 | [[VALE]] | Active | FastAPI, Ollama, Kokoro TTS, Whisper | D:\VALE\ |
 | [[Empty PWA]] | V1 complete — parked | Vanilla JS, Supabase, GitHub Pages | https://github.com/MiniJohan/Empty |
 | [[Mise]] | Active build | React + Vite, Supabase, Vercel | RecipePWA in Obsidian |
+| [[Income]] | Exploration | Skills: React, Vite, Supabase, FastAPI, AI | projects/income/ |
 
 ## Tech Stack
 | Layer | Tools |

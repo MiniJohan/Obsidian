@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_claude/projects/VaultPWA.md",
+                "file": "_claude/projects/income/progress.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "VaultPWA"
+              "title": "progress"
             }
           }
         ]
@@ -191,16 +191,21 @@
       "command-palette:Open command palette": false,
       "bases:Create new base": false,
       "templater-obsidian:Templater": false,
-      "obsidian-git:Open Git source control": false
+      "obsidian-git:Open Git source control": false,
+      "periodic-notes:Open today": false
     }
   },
   "active": "92a1e7d710c131d6",
   "lastOpenFiles": [
-    "_claude/projects/Mise-brief.md",
+    "_claude/projects/income/overview.md",
+    "_claude/projects/income/progress.md",
+    "_claude/projects/income/brainstorm.md",
+    "_templates/project.md",
+    "_claude/projects/income",
     "_claude/projects/VaultPWA.md",
+    "_claude/projects/Mise-brief.md",
     "_claude/projects/Mise.md",
     "_claude/projects/Empty-PWA.md",
-    "_templates/project.md",
     "_claude/active.md",
     "_claude/log.md",
     "_claude/memory.md",
@@ -221,7 +226,6 @@
     "2. Areas",
     "3. Resources.md",
     "Welcome.md",
-    "1. PROJECTS",
     "test/test.md",
     "2026-04-12.md",
     "create a link.md"

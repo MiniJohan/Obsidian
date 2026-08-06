@@ -1,5 +1,5 @@
 # Active Context
-Last updated: 2026-08-04
+Last updated: 2026-08-06
 
 ## Current focus
 **[[Mise]] (RecipePWA)** — calm personal recipe library PWA.
@@ -28,3 +28,14 @@ Project file: [[VaultPWA]]
 
 - Architecture decided (zero-knowledge, Argon2id, AES-256-GCM, Supabase)
 - Awaiting name + green light to build
+
+---
+
+## Income — Earning money (Exploration)
+Started: 2026-08-06
+Project files: [[Income]] → `projects/income/`
+
+- Skills mapped, 6 income directions identified and ranked
+- Top hypothesis: freelance web work (fastest to first revenue)
+- No active streams yet — direction selection is next step
+- Files: `overview.md`, `brainstorm.md`, `progress.md`
