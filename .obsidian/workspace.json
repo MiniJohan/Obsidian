@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_claude/log.md",
+                "file": "_claude/projects/income/brainstorm.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "log"
+              "title": "brainstorm"
             }
           }
         ]
@@ -197,6 +197,7 @@
   },
   "active": "92a1e7d710c131d6",
   "lastOpenFiles": [
+    "_claude/log.md",
     "_claude/projects/income/brainstorm.md",
     "_claude/projects/income/overview.md",
     "_claude/projects/income/progress.md",
@@ -207,7 +208,6 @@
     "_claude/projects/Mise.md",
     "_claude/projects/Empty-PWA.md",
     "_claude/active.md",
-    "_claude/log.md",
     "_claude/memory.md",
     "2026-08-04.md",
     "VALE.md",

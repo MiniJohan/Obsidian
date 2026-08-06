@@ -48,6 +48,24 @@ To be set once the best-fit direction is identified via the brainstorm matrix. I
 
 ---
 
+## Current Financial Situation
+*Snapshot as of 2026-08-06 — update when things change.*
+
+| | Amount | Notes |
+|--|--------|-------|
+| Savings | ~$400 (≈4,200 SEK) | Do not deplete this |
+| Monthly income | ~$25 (≈250 SEK) | Share of Barnbidrag |
+| Monthly spending | ~$30–40 | Small purchases — drinks at 14 SEK, food |
+| Monthly deficit | ~$5–15 | Spending slightly exceeds income |
+
+**The core problem:** Spending more than earning. Not by a lot — but it's the wrong direction. Even a small positive cash flow would change the dynamic entirely.
+
+**The drink habit:** ~14 SEK per drink, bought frequently. Buying in bulk (6-pack from store) cuts cost by 40–60%. Doesn't have to stop — just gets cheaper.
+
+**Buffer:** At current rate, savings last a long time — but they should be growing, not shrinking.
+
+---
+
 ## Key Decisions
 | Date | Decision | Rationale |
 |------|----------|-----------|
