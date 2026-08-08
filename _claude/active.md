@@ -1,23 +1,23 @@
 # Active Context
-Last updated: 2026-08-06
+Last updated: 2026-08-08
 
 ## Current focus
-**[[Mise]] (RecipePWA)** — calm personal recipe library PWA.
+**[[SongPWA]]** — dark, minimal personal music player PWA. Planning phase, no code started.
 
-Foundation is complete. Project scaffolded. Now building features.
+---
 
-## Done this session
-- ✅ Empty PWA V1 complete and parked
-- ✅ Obsidian log.md populated
-- ✅ memory.md updated
+## SongPWA — current state
+- ✅ Full project plan written to Obsidian (Overview, Data Model, Roadmap, Build Plan, UI & Design)
+- ⏳ Pending: project name from Zon before build starts
+- ⏳ Pending: 4 open decisions (name, audio formats, file size cap, artwork required?)
+- Next: Chunk 1 — Supabase setup (once decisions confirmed)
+
+---
 
 ## Mise — current build state
 - ✅ V1 complete — all features built, deployed, reviewed and patched
 - App is live on Vercel and installed on iPhone
 - No open bugs. Minor V1 gaps documented in Mise.md decision log.
-
-## Next up
-- V1 is closed. Nothing open.
 - When ready: V2 planning (food logging, "what should I eat?")
 
 ---
@@ -25,7 +25,6 @@ Foundation is complete. Project scaffolded. Now building features.
 ## VaultPWA — Password Manager (Planning)
 Started planning 2026-08-06.
 Project file: [[VaultPWA]]
-
 - Architecture decided (zero-knowledge, Argon2id, AES-256-GCM, Supabase)
 - Awaiting name + green light to build
 
@@ -34,8 +33,6 @@ Project file: [[VaultPWA]]
 ## Income — Earning money (Exploration)
 Started: 2026-08-06
 Project files: [[Income]] → `projects/income/`
-
 - Skills mapped, 6 income directions identified and ranked
 - Top hypothesis: freelance web work (fastest to first revenue)
 - No active streams yet — direction selection is next step
-- Files: `overview.md`, `brainstorm.md`, `progress.md`
