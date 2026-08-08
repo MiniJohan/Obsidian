@@ -23,6 +23,12 @@
 
 ---
 
+## Self
+
+[[2. Areas/self|→ self.md]] — edges, fallback actions, ideas, monthly review
+
+---
+
 ## Context
 
 - [[_claude/log\|Dev log]] — running journal of decisions, fixes, and builds
