@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Areas/self.md",
+                "file": "_claude/projects/BiometricAuth.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "self"
+              "title": "BiometricAuth"
             }
           }
         ]
@@ -197,13 +197,13 @@
   },
   "active": "92a1e7d710c131d6",
   "lastOpenFiles": [
+    "2. Areas/self.md",
     "_claude/projects/BiometricAuth.md",
     "_claude/projects/SongPWA.md",
     "1. PROJECTS/SongPWA/UI & Design.md",
     "1. PROJECTS/SongPWA/Build Plan.md",
     "dashboard.md",
     "_claude/active.md",
-    "2. Areas/self.md",
     "_claude/projects/Tempo.md",
     "1. PROJECTS/Tempo/Roadmap.md",
     "1. PROJECTS/Tempo/Build Plan.md",
