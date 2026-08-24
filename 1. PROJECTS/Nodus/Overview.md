@@ -30,14 +30,14 @@ Over time, the canvas becomes a personal map of how your ideas and projects rela
 
 ## What Makes This Different
 
-| Traditional mind map | Nodus |
-|---|---|
-| Tree structure, hierarchical | Freeform spatial placement |
-| Connections are visual decoration | Connections are data with meaning |
+| Traditional mind map                | Nodus                             |
+| ----------------------------------- | --------------------------------- |
+| Tree structure, hierarchical        | Freeform spatial placement        |
+| Connections are visual decoration   | Connections are data with meaning |
 | Focused on outlines / brainstorming | Focused on knowledge organization |
-| Dense, cluttered interfaces | Maximum negative space |
-| Always-visible toolbars | Contextual, minimal UI |
-| Optimized for presentations | Optimized for personal clarity |
+| Dense, cluttered interfaces         | Maximum negative space            |
+| Always-visible toolbars             | Contextual, minimal UI            |
+| Optimized for presentations         | Optimized for personal clarity    |
 
 ---
 

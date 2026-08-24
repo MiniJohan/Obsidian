@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "2. Areas/self.md",
+                "file": "1. PROJECTS/Nodus/Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "self"
+              "title": "Overview"
             }
           }
         ]
@@ -71,7 +71,10 @@
             "type": "leaf",
             "state": {
               "type": "bookmarks",
-              "state": {},
+              "state": {
+                "showSearch": false,
+                "searchQuery": ""
+              },
               "icon": "lucide-bookmark",
               "title": "Bookmarks"
             }
@@ -195,17 +198,17 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "9b353a75b942637e",
+  "active": "92a1e7d710c131d6",
   "lastOpenFiles": [
     "1. PROJECTS/Nodus/Interaction Spec.md",
-    "1. PROJECTS/Nodus/UI & Design.md",
     "1. PROJECTS/Nodus/Data Model.md",
+    "1. PROJECTS/Nodus/UI & Design.md",
     "1. PROJECTS/Nodus/Overview.md",
+    "2. Areas/self.md",
     "1. PROJECTS/Nodus",
     "1. PROJECTS/Auth Lab/Brainstorm.md",
     "_claude/log.md",
     "_claude/ideas.md",
-    "2. Areas/self.md",
     "_claude/projects/BiometricAuth.md",
     "_claude/projects/SongPWA.md",
     "1. PROJECTS/SongPWA/UI & Design.md",
