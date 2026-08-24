@@ -195,8 +195,13 @@
       "periodic-notes:Open today": false
     }
   },
-  "active": "92a1e7d710c131d6",
+  "active": "9b353a75b942637e",
   "lastOpenFiles": [
+    "1. PROJECTS/Nodus/Interaction Spec.md",
+    "1. PROJECTS/Nodus/UI & Design.md",
+    "1. PROJECTS/Nodus/Data Model.md",
+    "1. PROJECTS/Nodus/Overview.md",
+    "1. PROJECTS/Nodus",
     "1. PROJECTS/Auth Lab/Brainstorm.md",
     "_claude/log.md",
     "_claude/ideas.md",
@@ -220,10 +225,6 @@
     "_claude/projects/income",
     "_claude/projects/VaultPWA.md",
     "_claude/projects/Mise-brief.md",
-    "_claude/projects/Mise.md",
-    "_claude/projects/Empty-PWA.md",
-    "_claude/memory.md",
-    "2026-08-04.md",
     "_claude/projects",
     "_claude",
     "_claude/projects",
@@ -231,7 +232,6 @@
     "Untitled",
     "Daily",
     "4. Archive",
-    "3. Resources",
-    "2. Areas"
+    "3. Resources"
   ]
 }
