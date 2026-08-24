@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. PROJECTS/Nodus/Data Model.md",
+                "file": "1. PROJECTS/Nodus/UI & Design.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Data Model"
+              "title": "UI & Design"
             }
           }
         ]
@@ -200,12 +200,12 @@
   },
   "active": "92a1e7d710c131d6",
   "lastOpenFiles": [
-    "1. PROJECTS/Nodus/Interaction Spec.md",
     "1. PROJECTS/Nodus/Overview.md",
+    "1. PROJECTS/Nodus/UI & Design.md",
+    "1. PROJECTS/Nodus/Interaction Spec.md",
+    "1. PROJECTS/Nodus/Data Model.md",
     "Open Questions.md",
     "dashboard.md",
-    "1. PROJECTS/Nodus/Data Model.md",
-    "1. PROJECTS/Nodus/UI & Design.md",
     "2. Areas/self.md",
     "1. PROJECTS/Nodus",
     "1. PROJECTS/Auth Lab/Brainstorm.md",
