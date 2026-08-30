@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Resources/Design/Inspiration.md",
+                "file": "3. Resources/Design/Visual Library/_templates/3D Scene.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Inspiration"
+              "title": "3D Scene"
             }
           }
         ],
@@ -215,6 +215,7 @@
   },
   "active": "c2c97cffb0d86660",
   "lastOpenFiles": [
+    "3. Resources/Design/Inspiration.md",
     "3. Resources/Design/Visual Library/Other/_index.md",
     "3. Resources/Design/Visual Library/Screenshots/_index.md",
     "3. Resources/Design/Visual Library/Typography/_index.md",
@@ -245,7 +246,6 @@
     "3. Resources/Design/Visual Library/3D Scenes",
     "3. Resources/Design/Visual Library/_templates",
     "3. Resources/Design/Patterns.md",
-    "3. Resources/Design/Inspiration.md",
     "3. Resources/Design/Components.md",
     "3. Resources/Design/Spacing & Layout.md",
     "3. Resources/Design/Color.md",
