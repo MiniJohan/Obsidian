@@ -2,15 +2,18 @@
 Last updated: 2026-08-30
 
 ## Current focus
-**Design Vault** — set up and complete. Now passive reference.
+**Design Vault + Visual Library** — both set up and complete. Now passive reference.
 
 ---
 
 ## Design Vault — created 2026-08-30
 - ✅ Set up under `3. Resources/Design/`
-- 8 files: `_index.md`, `Principles.md`, `Typography.md`, `Color.md`, `Spacing & Layout.md`, `Components.md`, `Patterns.md`, `Inspiration.md`
-- Pre-loaded with Zon's actual aesthetic (dark, minimal, iPhone-first)
-- Full CSS custom properties block in `_index.md` — usable as project starting point
+- 8 knowledge files: `_index.md`, `Principles.md`, `Typography.md`, `Color.md`, `Spacing & Layout.md`, `Components.md`, `Patterns.md`, `Inspiration.md`
+- ✅ Visual Library set up under `3. Resources/Design/Visual Library/`
+- 9 categories: 3D Scenes, Animations, Backgrounds, Effects, Components, Typography, Websites, Screenshots, Other
+- 9 templates in `_templates/` — one per category
+- Each category has its own `_index.md` with tags, sorting sections, and add workflow
+- Naming convention: `Source — What it shows.md`
 
 ---
 

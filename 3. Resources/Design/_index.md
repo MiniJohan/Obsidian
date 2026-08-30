@@ -4,7 +4,7 @@ Personal web-design knowledge system. Dark, minimal, iPhone-first.
 
 ---
 
-## Sections
+## Knowledge base
 
 | Note | What it covers |
 |---|---|
@@ -15,6 +15,21 @@ Personal web-design knowledge system. Dark, minimal, iPhone-first.
 | [[Components]] | Reusable UI patterns with code snippets |
 | [[Patterns]] | UX interactions — loading, empty, error, gestures |
 | [[Inspiration]] | Reference sites, apps, and designers |
+
+## Visual Library
+
+| Section | What it holds |
+|---|---|
+| [[Visual Library/_index\|Visual Library]] | Hub — all categories, templates, and workflow |
+| [[Visual Library/3D Scenes/_index\|3D Scenes]] | Renders, materials, lighting references |
+| [[Visual Library/Animations/_index\|Animations]] | Motion, transitions, micro-interactions |
+| [[Visual Library/Backgrounds/_index\|Backgrounds]] | Gradients, noise, texture, patterns |
+| [[Visual Library/Effects/_index\|Effects]] | Grain, glow, glass, blur, blend modes |
+| [[Visual Library/Components/_index\|Components]] | UI elements worth studying |
+| [[Visual Library/Typography/_index\|Typography]] | Fonts, pairings, type-led layouts |
+| [[Visual Library/Websites/_index\|Websites]] | Full-site design references |
+| [[Visual Library/Screenshots/_index\|Screenshots]] | App and interface captures |
+| [[Visual Library/Other/_index\|Other]] | Print, packaging, physical design |
 
 ---
 
