@@ -1,8 +1,16 @@
 # Active Context
-Last updated: 2026-08-08
+Last updated: 2026-08-30
 
 ## Current focus
-**[[SongPWA]]** — dark, minimal personal music player PWA. Planning phase, no code started.
+**Design Vault** — set up and complete. Now passive reference.
+
+---
+
+## Design Vault — created 2026-08-30
+- ✅ Set up under `3. Resources/Design/`
+- 8 files: `_index.md`, `Principles.md`, `Typography.md`, `Color.md`, `Spacing & Layout.md`, `Components.md`, `Patterns.md`, `Inspiration.md`
+- Pre-loaded with Zon's actual aesthetic (dark, minimal, iPhone-first)
+- Full CSS custom properties block in `_index.md` — usable as project starting point
 
 ---
 
