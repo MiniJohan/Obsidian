@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "3. Resources/Design/Visual Library/_templates/3D Scene.md",
+                "file": "dashboard.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "3D Scene"
+              "title": "dashboard"
             }
           }
         ],
@@ -215,6 +215,8 @@
   },
   "active": "c2c97cffb0d86660",
   "lastOpenFiles": [
+    "0. Inbox/VALE Summary Prompt.md",
+    "3. Resources/Design/Visual Library/_templates/3D Scene.md",
     "3. Resources/Design/Inspiration.md",
     "3. Resources/Design/Visual Library/Other/_index.md",
     "3. Resources/Design/Visual Library/Screenshots/_index.md",
@@ -228,7 +230,6 @@
     "3. Resources/Design/Visual Library/_templates/Other.md",
     "3. Resources/Design/Visual Library/_templates/Screenshot.md",
     "3. Resources/Design/Visual Library/_templates/Typography Ref.md",
-    "3. Resources/Design/Visual Library/_templates/3D Scene.md",
     "3. Resources/Design/Visual Library/_templates/Background.md",
     "3. Resources/Design/Visual Library/_templates/Effect.md",
     "3. Resources/Design/Visual Library/_templates/Animation.md",
@@ -249,7 +250,6 @@
     "3. Resources/Design/Components.md",
     "3. Resources/Design/Spacing & Layout.md",
     "3. Resources/Design/Color.md",
-    "3. Resources/Design/Typography.md",
-    "3. Resources/Design/Principles.md"
+    "3. Resources/Design/Typography.md"
   ]
 }
