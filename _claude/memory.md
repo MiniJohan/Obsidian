@@ -10,7 +10,7 @@
 
 | Project | Status | Stack | Location |
 |---|---|---|---|
-| [[VALE]] | Active | FastAPI, Ollama, Kokoro TTS, Whisper | D:\VALE\ |
+| [[LORE]] | Active build — Phase 1 ready | FastAPI, Ollama, Kokoro TTS, Whisper, React + Vite | D:\LORE\ |
 | [[Empty PWA]] | V1 complete — parked | Vanilla JS, Supabase, GitHub Pages | https://github.com/MiniJohan/Empty |
 | [[Mise]] | Active build | React + Vite, Supabase, Vercel | RecipePWA in Obsidian |
 | [[Income]] | Exploration | Skills: React, Vite, Supabase, FastAPI, AI | projects/income/ |
@@ -20,7 +20,7 @@
 |---|---|
 | Frontend | HTML/CSS/JS (vanilla), React + Vite |
 | Backend | Python, FastAPI, Supabase |
-| AI local | Ollama (qwen2.5:14b), Cloudflare Tunnel, Whisper, Kokoro ONNX |
+| AI local | Ollama (qwen2.5:14b), Whisper (faster-whisper CUDA), Kokoro ONNX |
 | Hosting | GitHub Pages (Empty), Vercel (Mise) |
 
 ---

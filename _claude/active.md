@@ -1,19 +1,23 @@
 # Active Context
-Last updated: 2026-08-30
+Last updated: 2026-09-01
 
 ## Current focus
-**Design Vault + Visual Library** — both set up and complete. Now passive reference.
+**[[LORE]]** — personal local AI assistant. Full redesign from VALE complete. Phase 1 ready to build.
+**[[SongPWA]]** — dark, minimal personal music player PWA. Planning phase, no code started.
+
+---
+
+## LORE — current state
+- ✅ Full redesign completed (renamed from VALE, 2026-09-01)
+- ✅ Vault docs written: Overview, Data Model, UI & Design, Roadmap, Build Plan
+- ✅ `_claude/projects/LORE.md` created
+- ⏳ Next: Chunk 1 — Backend skeleton (main.py, memory.py, llm.py, pre-seeded memory.json)
 
 ---
 
 ## Design Vault — created 2026-08-30
-- ✅ Set up under `3. Resources/Design/`
-- 8 knowledge files: `_index.md`, `Principles.md`, `Typography.md`, `Color.md`, `Spacing & Layout.md`, `Components.md`, `Patterns.md`, `Inspiration.md`
-- ✅ Visual Library set up under `3. Resources/Design/Visual Library/`
-- 9 categories: 3D Scenes, Animations, Backgrounds, Effects, Components, Typography, Websites, Screenshots, Other
-- 9 templates in `_templates/` — one per category
-- Each category has its own `_index.md` with tags, sorting sections, and add workflow
-- Naming convention: `Source — What it shows.md`
+- ✅ Set up under `3. Resources/Design/`. Passive reference.
+- 8 knowledge files, Visual Library with 9 categories + templates. Naming: `Source — What it shows.md`
 
 ---
 

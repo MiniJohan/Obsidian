@@ -25,14 +25,10 @@
             "id": "c2c97cffb0d86660",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "0. Inbox/VALE Summary Prompt.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "VALE Summary Prompt"
+              "title": "New tab"
             }
           }
         ],
