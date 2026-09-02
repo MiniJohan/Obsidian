@@ -38,16 +38,16 @@ It knows who you are, what you're working on, and grows more capable as you buil
 
 ## Tech Stack
 
-| Layer | Choice | Notes |
-|---|---|---|
-| Backend | FastAPI + uvicorn | Port 5500 |
-| LLM | Ollama qwen2.5:14b | 100% GPU, RTX 5060 Ti 16GB |
-| STT | faster-whisper (CUDA) | base model, int8 |
-| TTS | Kokoro ONNX | am_fenrir voice |
-| Audio | sounddevice | mic capture + playback |
-| Frontend | React + Vite | replaces old vanilla UI |
-| Memory | JSON (lore_data/) | pre-seeded with identity |
-| Trigger | Chrome app mode + AutoHotkey | global hotkey, no taskbar noise |
+| Layer    | Choice                       | Notes                           |
+| -------- | ---------------------------- | ------------------------------- |
+| Backend  | FastAPI + uvicorn            | Port 5500                       |
+| LLM      | Ollama qwen2.5:14b           | 100% GPU, RTX 5060 Ti 16GB      |
+| STT      | faster-whisper (CUDA)        | base model, int8                |
+| TTS      | Kokoro ONNX                  | am_fenrir voice                 |
+| Audio    | sounddevice                  | mic capture + playback          |
+| Frontend | React + Vite                 | replaces old vanilla UI         |
+| Memory   | JSON (lore_data/)            | pre-seeded with identity        |
+| Trigger  | Chrome app mode + AutoHotkey | global hotkey, no taskbar noise |
 
 ---
 
