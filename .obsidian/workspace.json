@@ -27,12 +27,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "1. PROJECTS/LORE/Build Plan.md",
+                "file": "1. PROJECTS/LORE/Overview.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Build Plan"
+              "title": "Overview"
             }
           }
         ],
@@ -215,14 +215,14 @@
   },
   "active": "e6092f053264f0a4",
   "lastOpenFiles": [
+    "1. PROJECTS/LORE/Data Model.md",
+    "1. PROJECTS/LORE/UI & Design.md",
+    "1. PROJECTS/LORE/Roadmap.md",
+    "1. PROJECTS/LORE/Build Plan.md",
     "1. PROJECTS/LORE/Overview.md",
     "_claude/projects/LORE.md",
     "_claude/active.md",
     "_claude/memory.md",
-    "1. PROJECTS/LORE/Roadmap.md",
-    "1. PROJECTS/LORE/UI & Design.md",
-    "1. PROJECTS/LORE/Data Model.md",
-    "1. PROJECTS/LORE/Build Plan.md",
     "3. Resources/Design/Visual Library/_templates/3D Scene.md",
     "3. Resources/Design/Visual Library/3D Scenes/_index.md",
     "3. Resources/Design/_index.md",
