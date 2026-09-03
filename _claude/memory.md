@@ -59,3 +59,9 @@ Now reads device language, overridable in settings.
 - Explain reasoning, not just solutions.
 - Prioritize understanding over copy-paste code.
 - Design feedback: dark minimal wins. Reject anything cluttered.
+
+## Code delivery preference
+- Do NOT hand Zon complete files to paste.
+- Explain what to build, why it exists, how it connects to the rest of the system.
+- Walk through each section with enough detail that Zon can write it without getting stuck.
+- Step in with a snippet only if Zon asks or hits something non-obvious.
