@@ -1,9 +1,10 @@
 # Active Context
-Last updated: 2026-09-01
+Last updated: 2026-09-21
 
 ## Current focus
 **[[LORE]]** — personal local AI assistant. Full redesign from VALE complete. Phase 1 ready to build.
 **[[SongPWA]]** — dark, minimal personal music player PWA. Planning phase, no code started.
+**[[CV Object Detection]]** — real-time object detection on spare laptop webcam. Roadmap set, starting M1.
 
 ---
 
@@ -26,6 +27,15 @@ Last updated: 2026-09-01
 - ⏳ Pending: project name from Zon before build starts
 - ⏳ Pending: 4 open decisions (name, audio formats, file size cap, artwork required?)
 - Next: Chunk 1 — Supabase setup (once decisions confirmed)
+
+---
+
+## CV Object Detection — current state
+Started: 2026-09-21
+Project file: `_claude/projects/cv-object-detection.md`
+- Stack: OpenCV + Ultralytics YOLOv8n, CPU, spare laptop
+- Roadmap set (9 milestones, M1–M9)
+- ⏳ Current: M1 — open webcam, display feed, exit on q
 
 ---
 
